@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+ </head>
+
+ <body>
+  <header id="header">
+   <h1 id="title">User Servey Form</h1>
+   <p id="description">tell about yourself!</p>
+  </header>
+  <main id="main">
+
+   <form id="survey-form">
+    <section>
+     <label for="name" id="name-label">Name:</label>
+     <input type="text" id="name" placeholder="Enter your name" required>
+     <br><br>
+     <label for="email" id="email-label">Email:</label>
+     <input type="email" id="email" placeholder="Enter your email" required>
+     <br><br>
+     <label for="number" id="number-label">Age:</label>
+     <input type="number" id="number" min='16' max='99' placeholder="Age" required>
+     <br>
+    </section>
+    <br><br>
+    <section>
+     <p class="para">describe your current role.</p>
+     <br>
+     <select id="dropdown">
+
+      <option value="defult">Select the option</option>
+      <option value="student">Student</option>
+      <option value="unemployed">Unemployed</option>
+      <option value="job">Full time job</option>
+      <option value="retired">Retired</option>
+      <option value="preferNo">Prefer Not to Say</option>
+      <option value="other">other</option>
+
+     </select>
+    </section>
+    <br><br>
+    <section>
+     <p class="para">I am....</p>
+     <br>
+     <label for="male">Male</label>
+     <input type="radio" name="gender" value="male" id="male">
+     <label for="female">Female</label>
+     <input type="radio" name="gender" value="female" id="female">
+     <label for="other">Other</label>
+     <input type="radio" name="gender" value="other" id="other">
+    </section>
+    <br>
+    <section>
+
+     <p class="para">Check the boxes to describe you the best</p>
+     <br>
+     <label for="caring">Caring</label>
+     <input type="checkbox" value="caring" name="personality" id="caring">
+     <label for="caring">Loving</label>
+     <input type="checkbox" value="loving" name="personality" id="loving">
+     <label for="energetic">Energetic</label>
+     <input type="checkbox" value="energetic" name="personality" id="energetic">
+     <label for="hardworking">Hardworking</label>
+     <input type="checkbox" value="hardworking" name="personality" id="hardworking">
+
+    </section>
+    <br>
+    <section>
+     <p class="para">Any Comments or Suggestions</p>
+     <label for="comments">Comments:</label>
+     <br>
+     <textarea name="comments" id="comments" cols="50" rows="10" placeholder="Any comments or suggestions"></textarea>
+    </section>
+    <br>
+    <button type="submit" id="submit">Submit</button>
+   </form>
+  </main>
+ </body>
+
+</html>
